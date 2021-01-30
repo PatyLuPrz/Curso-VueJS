@@ -1,7 +1,7 @@
 /* eslint-disable */
 <template>
     <div>
-        {{ fullname }}
+        {{ mensaje }}
         
     </div>
 </template>
@@ -35,6 +35,11 @@
             fullname(){
                 return this.user.nombre + ' ' + this.user.apellido;
             }
+        },
+        props:{
+            mensaje:{
+                type: String,
+            },
         },
 
     }

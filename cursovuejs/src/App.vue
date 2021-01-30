@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Hola</h1>
-    <Test/>
+    <Test mensaje='mensaje enviado desde el componente padre'/>
   </div>
 </template>
 
