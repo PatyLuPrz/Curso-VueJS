@@ -1,6 +1,6 @@
 /* eslint-disable */
 <template>
-    <div>
+    <div class="test">
         {{ mensaje }}
         
     </div>
@@ -46,5 +46,7 @@
 </script>
 
 <style media="screen">
-
+    .test{
+        background: green;
+    }
 </style>
