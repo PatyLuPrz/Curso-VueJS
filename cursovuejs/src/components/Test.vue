@@ -1,6 +1,7 @@
+/* eslint-disable */
 <template>
     <div>
-        <input type="text" v-on:keyup.enter="typing">
+        {{ fullname }}
         
     </div>
 </template>
@@ -12,6 +13,7 @@
                 titulo : 'Datos del usuario',
                 user : {
                     nombre : 'Patricia',
+                    apellido : 'Perez',
                     email : 'may.patrics@gmail.com',
                 },
                 showName : true,
@@ -28,7 +30,12 @@
             typing (e) {
                 console.log(e.target.value);
             },
-        }
+        },
+        computed:{
+            fullname(){
+                return this.user.nombre + ' ' + this.user.apellido;
+            }
+        },
 
     }
 </script>
